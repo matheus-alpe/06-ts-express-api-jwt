@@ -1,3 +1,5 @@
+import 'reflect-metadata'
+import { AppDataSource } from './database/data-source'
 import initializeServer from './server'
 
-initializeServer()
+AppDataSource.initialize().then(initializeServer)

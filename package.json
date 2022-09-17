@@ -8,7 +8,10 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/server.js",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "migration:create": "typeorm-ts-node-commonjs migration:create ./src/database/migrations/migrationName",
+    "migration:run": "typeorm-ts-node-commonjs -d ./src/database/data-source.ts migration:run",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d ./src/database/data-source.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

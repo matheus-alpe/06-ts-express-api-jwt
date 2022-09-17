@@ -1,6 +1,7 @@
 import 'dotenv/config'
 
 const {
+  ENV,
   SERVER_PORT,
   POSTGRES_HOST,
   POSTGRES_PORT,
@@ -17,6 +18,7 @@ export default {
     PASSWORD: POSTGRES_PASSWORD,
     NAME: POSTGRES_DATABASE_NAME
   },
+  ENV,
   SERVER: {
     PORT: Number(SERVER_PORT)
   }
