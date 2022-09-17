@@ -1,8 +1,3 @@
-import app from './app'
-import config from './config'
+import initializeServer from './server'
 
-const PORT = config.SERVER.PORT || 3421
-
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`)
-})
+initializeServer()
