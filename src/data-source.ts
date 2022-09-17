@@ -1,5 +1,6 @@
+import 'reflect-metadata'
 import { DataSource } from 'typeorm'
-import config from '../config'
+import config from './config'
 
 const { DATABASE } = config
 
