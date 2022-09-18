@@ -12,5 +12,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "186ec661-b3d2-48e6-979a-8705df3635f6",
+    "colId": "ca6ed020-8b86-4bf9-8be5-02363a7ffd5a",
+    "containerId": "",
+    "name": "Store User",
+    "url": "{{host}}/users",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-18T00:08:20.047Z",
+    "modified": "2022-09-18T00:14:52.251Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"matttavles@gmail.com\",\n  \"password\": \"passmock123\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
