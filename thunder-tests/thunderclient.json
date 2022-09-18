@@ -31,5 +31,24 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "2e1286fb-b2fa-4d5f-bfd0-928d29719acb",
+    "colId": "1c2e6864-f1c9-42bd-9106-a3c808882b54",
+    "containerId": "",
+    "name": "Authenticate",
+    "url": "{{host}}/auth",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-18T00:45:41.222Z",
+    "modified": "2022-09-18T00:50:35.918Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"matttavles@gmail.com\",\n  \"password\": \"passmock123\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

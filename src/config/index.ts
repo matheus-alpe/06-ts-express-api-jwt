@@ -7,7 +7,8 @@ const {
   POSTGRES_PORT,
   POSTGRES_USERNAME,
   POSTGRES_PASSWORD,
-  POSTGRES_DATABASE_NAME
+  POSTGRES_DATABASE_NAME,
+  JWT_SECRET
 } = process.env
 
 export default {
@@ -19,6 +20,7 @@ export default {
     NAME: POSTGRES_DATABASE_NAME
   },
   ENV,
+  JWT_SECRET: JWT_SECRET || 'not_so_secret',
   SERVER: {
     PORT: Number(SERVER_PORT)
   }
