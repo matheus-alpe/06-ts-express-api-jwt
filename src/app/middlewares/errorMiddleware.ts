@@ -1,11 +1,6 @@
 import { NextFunction, Request, Response } from 'express'
 import config from '../../config'
 
-interface ResponseJson {
-  message: string
-  stack?: string
-}
-
 export function notFound(req: Request, res: Response) {
   res.status(404).json({
     message: `🔍 - Endpoint not found - ${req.originalUrl}`
