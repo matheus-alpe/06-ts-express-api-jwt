@@ -12,12 +12,6 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json())
 
-routes.get('/', (req, res) => {
-  res.json({
-    message: 'Welcome to JWT API'
-  })
-})
-
 app.use(routes)
 
 export default app
