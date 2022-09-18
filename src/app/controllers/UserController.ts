@@ -19,6 +19,15 @@ class UserController {
       user
     })
   }
+
+  async index(req: Request<{ userId: string }>, res: Response) {
+    const users = await User.find()
+
+    return res.json({
+      userId: req.params.userId,
+      users
+    })
+  }
 }
 
 export default new UserController()

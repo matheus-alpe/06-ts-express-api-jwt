@@ -9,7 +9,12 @@ class AuthController {
   async authenticate(req: Request, res: Response) {
     const { email, password } = req.body
 
-    const user = await User.findOne({ where: { email } })
+    const user = await User.createQueryBuilder('user')
+      .addSelect('user.password')
+      .where('user.email = :email', { email })
+      .getOne()
+
+    console.log(user)
     if (!user) {
       return res.sendStatus(401)
     }

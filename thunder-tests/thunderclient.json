@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2022-09-18T00:08:20.047Z",
-    "modified": "2022-09-18T00:14:52.251Z",
+    "modified": "2022-09-18T01:38:48.025Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"matttavles@gmail.com\",\n  \"password\": \"passmock123\"\n}",
+      "raw": "{\n  \"email\": \"teste@gmail.com\",\n  \"password\": \"passmock123\"\n}",
       "form": []
     },
     "tests": []
@@ -48,6 +48,24 @@
       "type": "json",
       "raw": "{\n  \"email\": \"matttavles@gmail.com\",\n  \"password\": \"passmock123\"\n}",
       "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "83e86d12-01b7-4e0e-9d97-3fb9075306cf",
+    "colId": "ca6ed020-8b86-4bf9-8be5-02363a7ffd5a",
+    "containerId": "",
+    "name": "Index User",
+    "url": "{{host}}/users",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-09-18T01:08:00.923Z",
+    "modified": "2022-09-18T01:38:33.814Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
     },
     "tests": []
   }
